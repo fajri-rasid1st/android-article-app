@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Profile App</string>
+    <string name="my_app">My App</string>
+    <string name="todo">TODO</string>
+    <string name="my_profile">My Profile</string>
+    <string name="article">Article</string>
+    <string name="muhammad_fajri_rasid">Muhammad Fajri Rasid</string>
+    <string name="nickname">H071191051</string>
+    <string name="masamba_sulawesi_selatan_indonesia">Masamba, Sulawesi Selatan, Indonesia</string>
+    <string name="lahir_26_februari_2001">Lahir 26 Februari 2001</string>
+    <string name="motto_hidup">Life Principle</string>
+    <string name="seberat_apapun_pekerjaan_akan_terasa_ringan_apabila_tidak_dikerjakan">\"Seberat apapun pekerjaan, akan terasa ringan apabila tidak dikerjakan\"</string>
+    <string name="hobby_or_interest">Hobby or Interest</string>
+    <string name="code">code</string>
+    <string name="swimming">swim</string>
+    <string name="sleep">sleep</string>
+    <string name="eat">eat</string>
+    <string name="repeat">repeat</string>
+    <string name="android_10_jadi_versi_android_terpopuler_di_indonesia">Android 10 Jadi Versi Android Terpopuler di Indonesia</string>
+    <string name="article_text">
+        KOMPAS.com - Tak bisa dipungkiri lagi bahwa smartphone Android menguasai pangsa pasar ponsel pintar di Indonesia. Beberapa firma riset pasar selalu menempatkan vendor smartphone Android di lima besar penguasa Tanah Air.\n\nDari banyaknya versi Android yang ada, Android 10 menjadi versi yang paling populer di Indonesia. Laporan perusahaan analitk StatCounter mencatat, Android 10 terinstal di 34,37 persen ponsel Android di Indonesia. Adopsi Android 10 yang cepat ini tak lepas dari strategi Google yang mewajibkan seluruh ponsel Android keluaran tahun 2020 untuk menggunakan Android 10.
+    </string>
+    <string name="jakarta_indonesia_kompas_com">Jakarta, Indonesia - Kompas.com</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anime_walpaper"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:padding="14dp"
+            android:layout_marginTop="130dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="38dp"
+                android:id="@+id/biodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginBottom="-4dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/android_10_jadi_versi_android_terpopuler_di_indonesia"
+                    android:textColor="@color/textIcons"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                </TextView>
+
+                <TextView
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/ic_place_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/jakarta_indonesia_kompas_com"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_below="@id/biodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/article_text"
+                android:textColor="@color/primaryText"
+                android:textSize="14sp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/interest_bg"
+                    android:contentDescription="@string/todo"
+                    android:padding="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_home_black_24dp" />
+
+                <ImageButton
+                    android:padding="20dp"
+                    android:id="@+id/btn_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/interest_bg"
+                    android:src="@drawable/ic_person_50"
+                    android:contentDescription="@string/todo" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>

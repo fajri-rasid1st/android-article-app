@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anime_walpaper"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:padding="14dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_marginBottom="12dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user_picture"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/textIcons"/>
+
+            <LinearLayout
+                android:layout_marginBottom="18dp"
+                android:id="@+id/biodata"
+                android:layout_below="@id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginBottom="-8dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/muhammad_fajri_rasid"
+                    android:textColor="@color/primaryText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                </TextView>
+
+                <TextView
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/nickname"
+                    android:textColor="@color/secondaryText"
+                    android:textSize="18sp">
+                </TextView>
+
+                <TextView
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/ic_place_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/masamba_sulawesi_selatan_indonesia"
+                    android:textColor="@color/secondaryText"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_cake_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/lahir_26_februari_2001"
+                    android:textColor="@color/secondaryText"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/motto_hidup"
+                android:layout_below="@id/biodata"
+                android:layout_marginBottom="2dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/motto_hidup"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/motto_text"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/gradient_shape"
+                android:layout_below="@id/motto_hidup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/seberat_apapun_pekerjaan_akan_terasa_ringan_apabila_tidak_dikerjakan"
+                android:textColor="@color/textIcons"
+                android:textSize="14sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/interested"
+                android:layout_below="@id/motto_text"
+                android:layout_marginBottom="2dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/hobby_or_interest"
+                android:textColor="@color/primaryText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/sub_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/interested">
+
+                <TextView
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/code"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/ic_computer_black_24dp"
+                    android:textAlignment="center"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/interest_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/eat"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/ic_restaurant_menu_black_24dp"
+                    android:textAlignment="center"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/interest_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/sleep"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/ic_airline_seat_individual_suite_black_24dp"
+                    android:textAlignment="center"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/interest_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/repeat"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:drawableStart="@drawable/ic_autorenew_black_24dp"
+                    android:textAlignment="center"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/interest_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/sub_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/interest_bg"
+                    android:contentDescription="@string/todo"
+                    android:padding="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_home_black_24dp" />
+
+                <ImageButton
+                    android:padding="20dp"
+                    android:id="@+id/btn_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/interest_bg"
+                    android:src="@drawable/ic_forum_50"
+                    android:contentDescription="@string/todo" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>
