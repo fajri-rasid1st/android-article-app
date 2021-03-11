@@ -1,39 +1,49 @@
 package com.example.myprofileapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
+import androidx.fragment.app.Fragment;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton btnProfile = findViewById(R.id.btn_profile);
-        btnProfile.setOnClickListener(this);
+        BottomNavigationView bnv = findViewById(R.id.bottomNavigationView2);
+        bnv.setOnNavigationItemSelectedListener(navListener);
 
-        ImageButton btnArticle = findViewById(R.id.btn_article);
-        btnArticle.setOnClickListener(this);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new main_fragment()).commit();
     }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_profile:
-                Intent firstIntent = new Intent(MainActivity.this, ProfileActivity.class);
-                firstIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(firstIntent);
-                break;
-            case R.id.btn_article:
-                Intent secondIntent = new Intent(MainActivity.this, ArticleActivity.class);
-                secondIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(secondIntent);
-                break;
+    private final BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @SuppressLint("NonConstantResourceId")
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
+
+            switch (item.getItemId()) {
+                case R.id.main_fragment:
+                    selectedFragment = new main_fragment();
+                    break;
+                case R.id.profile_fragment:
+                    selectedFragment = new profile_fragment();
+                    break;
+                case R.id.article_fragment:
+                    selectedFragment = new article_fragment();
+                    break;
+            }
+
+            assert selectedFragment != null;
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+
+            return  true;
         }
-    }
+    };
 }
